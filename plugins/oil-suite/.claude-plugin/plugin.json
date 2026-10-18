@@ -1,0 +1,19 @@
+{
+  "name": "oil-suite",
+  "version": "1.0.0",
+  "description": "社区打包的 oil-tone 写作、oil-ui 界面设计与 oil-motion 网页动画技能。",
+  "author": {
+    "name": "larryboiNEUQ (packaging maintainer)"
+  },
+  "homepage": "https://github.com/larryboiNEUQ/oil-skills",
+  "repository": "https://github.com/larryboiNEUQ/oil-skills",
+  "license": "MIT",
+  "keywords": [
+    "oil-tone",
+    "oil-ui",
+    "oil-motion",
+    "writing",
+    "design",
+    "animation"
+  ]
+}

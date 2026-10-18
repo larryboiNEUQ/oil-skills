@@ -1,0 +1,25 @@
+name: Validate packaging
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
+        with:
+          node-version: '22'
+      - name: Install Claude CLI
+        run: npm install --global @anthropic-ai/claude-code@2.1.283
+      - name: Validate marketplace
+        run: claude plugin validate .claude-plugin/marketplace.json --strict
+      - name: Validate plugin
+        run: claude plugin validate plugins/oil-suite --strict

@@ -1,0 +1,17 @@
+{
+  "name": "oil-skills",
+  "owner": {
+    "name": "larryboiNEUQ"
+  },
+  "metadata": {
+    "description": "以单一 oil-suite 插件提供 oil-tone、oil-ui 与 oil-motion 的社区打包。"
+  },
+  "plugins": [
+    {
+      "name": "oil-suite",
+      "source": "./plugins/oil-suite",
+      "description": "社区打包的 oil-tone、oil-ui 与 oil-motion 技能。",
+      "version": "1.0.0"
+    }
+  ]
+}

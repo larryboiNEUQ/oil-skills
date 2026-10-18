@@ -1,0 +1,113 @@
+{
+  "schema_version": 1,
+  "package": {
+    "repository": "https://github.com/larryboiNEUQ/oil-skills",
+    "marketplace": "oil-skills",
+    "plugin": "oil-suite",
+    "version": "1.0.0",
+    "maintainer": "larryboiNEUQ",
+    "relationship": "Unofficial community repackaging",
+    "license": "MIT",
+    "license_path": "LICENSE"
+  },
+  "copy_policy": {
+    "selection": "git ls-files -z at each recorded commit",
+    "content": "Preserve upstream bytes, file modes, and relative paths within each copied tree",
+    "exclude_git_metadata": true,
+    "exclude_untracked_files": true,
+    "rewrite_skill_text_or_scripts": false
+  },
+  "sources": [
+    {
+      "name": "oil-tone",
+      "repository_url": "https://github.com/oil-oil/oil-tone",
+      "commit_sha": "39cbf92f76c90b7bb27a5b5d4ed88a1fc5fa31f6",
+      "source_root": "skills/oil-tone",
+      "destination": "plugins/oil-suite/skills/oil-tone",
+      "additional_copies": [
+        {
+          "source": "LICENSE",
+          "destination": "plugins/oil-suite/skills/oil-tone/LICENSE"
+        }
+      ],
+      "exclusions": {
+        "rules": ["All files outside skills/oil-tone/ except root LICENSE"],
+        "tracked_files": [".gitignore", "README.md", "assets/readme/hero.svg"]
+      },
+      "copied_file_count": 4,
+      "licenses": [
+        {
+          "license": "MIT",
+          "copyright": "Copyright (c) 2026 oil-oil",
+          "source_license": "LICENSE",
+          "destination_license": "plugins/oil-suite/skills/oil-tone/LICENSE",
+          "applies_to": "plugins/oil-suite/skills/oil-tone/**"
+        }
+      ]
+    },
+    {
+      "name": "oil-ui",
+      "repository_url": "https://github.com/oil-oil/oil-ui",
+      "commit_sha": "1405c012bd4b435d051d8d1fd7f6ef616cae518a",
+      "source_root": ".",
+      "destination": "plugins/oil-suite/skills/oil-ui",
+      "additional_copies": [],
+      "exclusions": {
+        "rules": ["/.gitignore", "/.github/workflows/**"],
+        "tracked_files": [".gitignore"]
+      },
+      "copied_file_count": 38,
+      "licenses": [
+        {
+          "license": "MIT",
+          "copyright": "Copyright (c) 2026 oil-oil",
+          "source_license": "LICENSE",
+          "destination_license": "plugins/oil-suite/skills/oil-ui/LICENSE",
+          "applies_to": "plugins/oil-suite/skills/oil-ui/** except separately licensed bundled components"
+        },
+        {
+          "license": "OFL-1.1",
+          "copyright": "Copyright 2022 The Instrument Serif Project Authors (https://github.com/Instrument/instrument-serif)",
+          "source_license": "assets/fonts/instrument-serif/OFL.txt",
+          "destination_license": "plugins/oil-suite/skills/oil-ui/assets/fonts/instrument-serif/OFL.txt",
+          "applies_to": "plugins/oil-suite/skills/oil-ui/assets/fonts/instrument-serif/InstrumentSerif-Regular.ttf"
+        },
+        {
+          "license": "MIT",
+          "component": "Alpine.js 3.17.4",
+          "component_url": "https://github.com/alpinejs/alpine",
+          "source_notice": "assets/vendor/alpine.min.js",
+          "destination_notice": "plugins/oil-suite/skills/oil-ui/assets/vendor/alpine.min.js",
+          "notice_location": "First-line bundled license header, preserved unchanged",
+          "applies_to": "plugins/oil-suite/skills/oil-ui/assets/vendor/alpine.min.js"
+        }
+      ]
+    },
+    {
+      "name": "oil-motion",
+      "repository_url": "https://github.com/oil-oil/oil-motion",
+      "commit_sha": "07e31f2265f80caa8f2c1df825d85ac24a46307c",
+      "source_root": ".",
+      "destination": "plugins/oil-suite/skills/oil-motion",
+      "additional_copies": [],
+      "exclusions": {
+        "rules": ["/.gitignore", "/.github/workflows/**"],
+        "tracked_files": [
+          ".github/workflows/credential-ui.yml",
+          ".github/workflows/tests.yml",
+          ".gitignore"
+        ]
+      },
+      "copied_file_count": 83,
+      "licenses": [
+        {
+          "license": "MIT",
+          "copyright": "Copyright (c) 2026 Lin Zhihuang",
+          "source_license": "LICENSE",
+          "destination_license": "plugins/oil-suite/skills/oil-motion/LICENSE",
+          "applies_to": "plugins/oil-suite/skills/oil-motion/**"
+        }
+      ]
+    }
+  ]
+}
